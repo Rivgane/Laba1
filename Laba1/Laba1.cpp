@@ -69,8 +69,8 @@ int main()
 	};
 	for (int i = 1; i <= order; i++)
 	{
-		putchar(intarr[0] & mask ? '1' : '0');
-		intarr[0] <<= 1;
+		putchar(intarr[1] & mask ? '1' : '0');
+		intarr[1] <<= 1;
 		if ((i <= 16) and (i % 12 == 0))
 		{
 			putchar(' ');
@@ -82,8 +82,8 @@ int main()
 	}
 	for (int i = 33; i <= (order*2); i++)
 	{
-		putchar(intarr[1] & mask ? '1' : '0');
-		intarr[1] <<= 1;
+		putchar(intarr[0] & mask ? '1' : '0');
+		intarr[0] <<= 1;
 	}
 std::cout << "\n";
 
