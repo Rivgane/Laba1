@@ -17,14 +17,15 @@ int main()
 	char chara = -45;
 	bool boola = 1;
 	std::cout << "Output format: \"1. <Size_of_given_variable_type_here> 2. <Size_of_variable_of_that_type_here>.\"" << std::endl;
-	std::cout << "1. " << sizeof(int) << " 2. " << sizeof(inta) << std::endl;
-	std::cout << "1. " << sizeof(short int) << " 2. " << sizeof(sinta) << std::endl;
-	std::cout << "1. " << sizeof(long int) << " 2. " << sizeof(linta) << std::endl;
-	std::cout << "1. " << sizeof(float) << " 2. " << sizeof(floata) << std::endl;
-	std::cout << "1. " << sizeof(double) << " 2. " << sizeof(douba) << std::endl;
-	std::cout << "1. " << sizeof(long double) << " 2. " << sizeof(ldouba) << std::endl;
-	std::cout << "1. " << sizeof(char) << " 2. " << sizeof(chara) << std::endl;
-	std::cout << "1. " << sizeof(bool) << " 2. " << sizeof(boola) << std::endl;
+
+	std::cout << "sizeof(int)         " << "1. " << sizeof(int)			<< " 2. " << sizeof(inta) << std::endl;
+	std::cout << "sizeof(short int)   " << "1. " << sizeof(short int)	<< " 2. " << sizeof(sinta) << std::endl;
+	std::cout << "sizeof(long int)    " << "1. " << sizeof(long int)	<< " 2. " << sizeof(linta) << std::endl;
+	std::cout << "sizeof(float)       " << "1. " << sizeof(float)		<< " 2. " << sizeof(floata) << std::endl;
+	std::cout << "sizeof(double)      " << "1. " << sizeof(double)		<< " 2. " << sizeof(douba) << std::endl;
+	std::cout << "sizeof(long double) " << "1. " << sizeof(long double) << " 2. " << sizeof(ldouba) << std::endl;
+	std::cout << "sizeof(char)        " << "1. " << sizeof(char)        << " 2. " << sizeof(chara) << std::endl;
+	std::cout << "sizeof(bool)        " << "1. " << sizeof(bool)	    << " 2. " << sizeof(boola) << std::endl;
 
 	std::cout << "\n";
 	std::cout << "Memory representation of integer-type variable: " << std::endl;
