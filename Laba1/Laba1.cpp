@@ -7,8 +7,8 @@ int main()
 {
 	setlocale(0, "");
 	int inta = 294;
-	unsigned int order = 32; // Количество разрядов
-	unsigned int mask = 1 << order - 1;// Маска побитового сравнения
+	unsigned int order = 32; // Amount of digits
+	unsigned int mask = 1 << order - 1;// Comparison mask
 	short int sinta = 30;
 	long int linta = -400;
 	float floata = -25.8f;
@@ -16,7 +16,7 @@ int main()
 	long double ldouba = 3.141592653589793l;
 	char chara = -45;
 	bool boola = 1;
-	std::cout << "Output format: \"1. <Size_of_given_variable_type_here> 2. <Size_of_variable_of_that_type_here>.\"" << std::endl;
+	std::cout << "Output format: \" sizeof(<given_data_type_here>) 1. <Size_of_given_data_type_here> 2. <Size_of_variable_of_that_type_here>.\"" << std::endl;
 
 	std::cout << "sizeof(int)         " << "1. " << sizeof(int)			<< " 2. " << sizeof(inta) << std::endl;
 	std::cout << "sizeof(short int)   " << "1. " << sizeof(short int)	<< " 2. " << sizeof(sinta) << std::endl;
