@@ -87,7 +87,7 @@ int main()
 		intarr[0] <<= 1;
 	}
 std::cout << "\n";
-system("pause");
+system("pause"); 
 return 0;
 }
 
