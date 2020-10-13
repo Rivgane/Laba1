@@ -27,7 +27,7 @@ int main()
 	std::cout << "sizeof(char)        " << "1. " << sizeof(char)        << " 2. " << sizeof(chara) << std::endl;
 	std::cout << "sizeof(bool)        " << "1. " << sizeof(bool)	    << " 2. " << sizeof(boola) << std::endl;
 
-	std::cout << "\n";
+	std::cout << std::endl;
 	std::cout << "Memory representation of integer-type variable: " << std::endl;
 	for (int i = 1; i <= order; i++)
 	{
@@ -42,7 +42,7 @@ int main()
 			putchar(' ');
 		}
 	}
-	std::cout << "\n" << std::endl;
+	std::cout << std::endl << std::endl;
 	std::cout << "Memory representation of float-type variable: " << std::endl;
 	union {
 		int intb;
@@ -62,7 +62,7 @@ int main()
 		}
 
 	}
-	std::cout << "\n" << std::endl;
+	std::cout << std::endl << std::endl;
 	std::cout << "Memory representation of double-type variable: " << std::endl;
 	union {
 		int intarr [2];
@@ -86,9 +86,9 @@ int main()
 		putchar(intarr[0] & mask ? '1' : '0');
 		intarr[0] <<= 1;
 	}
-std::cout << "\n";
-system("pause"); 
-return 0;
+	std::cout << std::endl << std::endl;
+	system("pause"); 
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
