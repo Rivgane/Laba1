@@ -6,28 +6,21 @@
 int main()
 {
 	setlocale(0, "");
+	std::cout << "Output format: \" sizeof(<data_type_here>) <Size_of_given_data_type_here>.\"" << std::endl;
+
+	std::cout << "sizeof(int)         "<< sizeof(int)			<< std::endl;
+	std::cout << "sizeof(short int)   "<< sizeof(short int)		<< std::endl;
+	std::cout << "sizeof(long int)    "<< sizeof(long int)		<< std::endl;
+	std::cout << "sizeof(float)       "<< sizeof(float)			<< std::endl;
+	std::cout << "sizeof(double)      "<< sizeof(double)		<< std::endl;
+	std::cout << "sizeof(long double) "<< sizeof(long double)   << std::endl;
+	std::cout << "sizeof(char)        "<< sizeof(char)          << std::endl;
+	std::cout << "sizeof(bool)        "<< sizeof(bool)			<< std::endl;
+	std::cout << std::endl;
+
 	int inta = 294;
 	unsigned int order = 32; // Amount of digits
 	unsigned int mask = 1 << order - 1;// Comparison mask
-	short int sinta = 30;
-	long int linta = -400;
-	float floata = -25.8f;
-	double douba = 3.14159265;
-	long double ldouba = 3.141592653589793l;
-	char chara = -45;
-	bool boola = 1;
-	std::cout << "Output format: \" sizeof(<given_data_type_here>) 1. <Size_of_given_data_type_here> 2. <Size_of_variable_of_that_type_here>.\"" << std::endl;
-
-	std::cout << "sizeof(int)         " << "1. " << sizeof(int)			<< " 2. " << sizeof(inta) << std::endl;
-	std::cout << "sizeof(short int)   " << "1. " << sizeof(short int)	<< " 2. " << sizeof(sinta) << std::endl;
-	std::cout << "sizeof(long int)    " << "1. " << sizeof(long int)	<< " 2. " << sizeof(linta) << std::endl;
-	std::cout << "sizeof(float)       " << "1. " << sizeof(float)		<< " 2. " << sizeof(floata) << std::endl;
-	std::cout << "sizeof(double)      " << "1. " << sizeof(double)		<< " 2. " << sizeof(douba) << std::endl;
-	std::cout << "sizeof(long double) " << "1. " << sizeof(long double) << " 2. " << sizeof(ldouba) << std::endl;
-	std::cout << "sizeof(char)        " << "1. " << sizeof(char)        << " 2. " << sizeof(chara) << std::endl;
-	std::cout << "sizeof(bool)        " << "1. " << sizeof(bool)	    << " 2. " << sizeof(boola) << std::endl;
-
-	std::cout << std::endl;
 	std::cout << "Memory representation of integer-type variable: " << std::endl;
 	for (int i = 1; i <= order; i++)
 	{
